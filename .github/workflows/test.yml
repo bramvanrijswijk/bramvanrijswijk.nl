@@ -17,15 +17,15 @@ jobs:
       - name: Compile assets
         run: npm run build
 
-#      - name: 📂 Sync files
-#        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-#        with:
-#          server: ftp.strato.com
-#          username: ${{ secrets.ftp_username }}
-#          password: ${{ secrets.ftp_password }}
-#          server-dir: /test.makeking.nl/htdocs/
-#          exclude: .git*
-#            - .git*/**
-#            -  **/.git*/**
-#            - node_modules/**
-#            - node_modules/**/*
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.strato.com
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /test.bramvanrijswijk.nl/htdocs/
+          exclude: .git*
+            - .git*/**
+            -  **/.git*/**
+            - node_modules/**
+            - node_modules/**/*
