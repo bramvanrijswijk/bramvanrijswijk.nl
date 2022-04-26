@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
+import "./css/style.css"
 
 Vue.config.productionTip = true
 
-import "./css/style.css"
-
 new Vue({
-  render: h => h(App),
+    render: h => h(App),
 }).$mount('#app')
